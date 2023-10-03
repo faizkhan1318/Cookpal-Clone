@@ -354,11 +354,20 @@ footer li {
     content: "\f173";
     /* add tumblr icon */
 }
+.menu__icon {
+    display: none;
+}
 
 
 @media (max-width: 767px) {
     .main-content {
         display: block;
+    }
+    .menu__icon{
+        display: block;
+    }
+    .nav-link, .profile{
+        display: none;
     }
 
     #sidebar {
@@ -373,6 +382,7 @@ footer li {
         margin-bottom: 10px;
         width: 100%;
     }
+    
 }
 
 @media (max-width: 576px) {
@@ -383,16 +393,37 @@ footer li {
     #recipeContainer{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
     }
 
     .recipe-card {
         flex-direction: column;
-        width: 100%;
+        width: 95%;
     }
 
     .recipe-image {
         width: 100%;
         height: 250px;
     }
+    .carousel-text p {
+        font-size: 15px;
+        width: 200px;
+    }
+    .carousel-text h1{
+        font-size: 24px;
+        width: 200px;
+    }
+
+    .div-1{
+        display: none;
+    }
+    
 }
+
+
+
+
+
+
+
+
